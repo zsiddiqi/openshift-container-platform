@@ -15,8 +15,8 @@ runuser -l $SUDOUSER -c "chmod 600 ~/.ssh/id_rsa*"
 
 # Remove RHUI
 
-rm -f /etc/yum.repos.d/rh-cloud.repo
-sleep 10
+# rm -f /etc/yum.repos.d/rh-cloud.repo
+# sleep 10
 
 # Register Host with Cloud Access Subscription
 echo $(date) " - Register host with Cloud Access Subscription"

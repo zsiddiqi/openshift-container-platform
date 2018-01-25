@@ -438,7 +438,7 @@ openshift_router_selector='type=infra'
 openshift_registry_selector='type=infra'
 
 # Deploy Service Catalog
-#openshift_enable_service_catalog=false
+openshift_enable_service_catalog=false
 
 openshift_master_cluster_method=native
 openshift_master_cluster_hostname=$MASTERPUBLICIPHOSTNAME
@@ -704,18 +704,18 @@ then
 fi
 
 # Delete postinstall.yml file
-echo $(date) "- Deleting unecessary files"
+# echo $(date) "- Deleting unecessary files"
 
-rm /home/${SUDOUSER}/addocpuser.yml
-rm /home/${SUDOUSER}/assignclusteradminrights.yml
-rm /home/${SUDOUSER}/assignrootpassword.yml
-rm /home/${SUDOUSER}/dockerregistry.yml
-rm /home/${SUDOUSER}/setup-azure-master.yml
-rm /home/${SUDOUSER}/setup-azure-node-master.yml
-rm /home/${SUDOUSER}/setup-azure-node.yml
-rm /home/${SUDOUSER}/deletestucknodes.yml
-rm /home/${SUDOUSER}/reboot-master.yml
-rm /home/${SUDOUSER}/reboot-nodes.yml
+# rm /home/${SUDOUSER}/addocpuser.yml
+# rm /home/${SUDOUSER}/assignclusteradminrights.yml
+# rm /home/${SUDOUSER}/assignrootpassword.yml
+# rm /home/${SUDOUSER}/dockerregistry.yml
+# rm /home/${SUDOUSER}/setup-azure-master.yml
+# rm /home/${SUDOUSER}/setup-azure-node-master.yml
+# rm /home/${SUDOUSER}/setup-azure-node.yml
+# rm /home/${SUDOUSER}/deletestucknodes.yml
+# rm /home/${SUDOUSER}/reboot-master.yml
+# rm /home/${SUDOUSER}/reboot-nodes.yml
 	
 echo $(date) "- Sleep for 60"
 	
